@@ -13,10 +13,9 @@ import Footer from "@/components/Footer/Footer"
 export default function Home() {
   const [openPackageId, setOpenPackageId] = useState<string | undefined>(undefined)
 
-  // Сбрасываем openPackageId после обработки
   useEffect(() => {
     if (openPackageId) {
-      const timer = setTimeout(() => setOpenPackageId(undefined), 500) // Сброс через 500мс
+      const timer = setTimeout(() => setOpenPackageId(undefined), 500) 
       return () => clearTimeout(timer)
     }
   }, [openPackageId])
@@ -41,7 +40,7 @@ export default function Home() {
       <LearningProcess id="learning-process" />
       <Pricing id="prices" openPackageId={openPackageId} />
       <License />
-      <DataForm />
+      <DataForm id="data-form"/>
       <Footer id="footer" />
     </main>
   )

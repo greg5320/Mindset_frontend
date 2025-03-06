@@ -146,7 +146,7 @@
   }
   
   .pricing-card--orange .pricing-card__button:hover {
-    background-color: #e07d1b;
+    background-color: #e8bb8e;
   }
   
   .pricing-card--blue .pricing-card__button {
@@ -155,7 +155,7 @@
   }
   
   .pricing-card--blue .pricing-card__button:hover {
-    background-color: #1c3a9d;
+    background-color: #728ada;
   }
   
   .pricing-card--featured .pricing-card__button {
@@ -232,7 +232,6 @@
       width: 100%;
     }
   
-    /* Специальные стили для featured карточки */
     .pricing-card--featured {
       transform: scale(1.02);
     }
@@ -269,7 +268,7 @@
     .pricing-card {
       padding: 16px;
       border-radius: 24px;
-      min-width: 0; /* Предотвращает переполнение */
+      min-width: 0; 
     }
   
     .pricing-card__title {
@@ -279,7 +278,7 @@
   
     .pricing-card__price {
       font-size: 28px;
-      white-space: nowrap; /* Предотвращает перенос цены */
+      white-space: nowrap; 
     }
   
     .pricing-card__old-price {
@@ -312,7 +311,7 @@
       border: 2px solid #274abd;
     }
     .pricing {
-      padding: 16px; /* уменьшен общий отступ */
+      padding: 16px; 
     }
   
     .pricing__title {
@@ -330,12 +329,12 @@
     
     .pricing-cards {
       grid-template-columns: repeat(3, 1fr);
-      gap: 8px;       /* уменьшаем зазор между карточками */
-      padding: 8px 0; /* уменьшаем вертикальный отступ */
+      gap: 8px;       
+      padding: 8px 0; 
     }
     
     .pricing-card {
-      padding: 12px;         /* уменьшаем внутренние отступы карточки */
+      padding: 12px;         
       border-radius: 16px;
     }
     
@@ -365,7 +364,6 @@
       font-size: 7px;
     }
     
-    /* Если есть блок с фиксированной высотой, можно его тоже уменьшить */
     .pricing-card__price-wrapper {
       min-height: 80px;
       margin-bottom: 8px;

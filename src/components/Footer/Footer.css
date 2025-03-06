@@ -26,7 +26,6 @@
   max-width: 200px;
   width: 100%;
   height: auto;
-  /* Если не требуется масштабирование, убираем scale */
   /* transform: scale(1.5); */
 }
 
@@ -113,27 +112,23 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* Медиазапрос для экранов от 769px до 1024px */
 @media (max-width: 1024px) and (min-width: 769px) {
   .footer {
     padding: 40px 20px;
   }
 }
 
-/* Медиазапрос для мобильных устройств (макс. 480px) */
 @media (max-width: 480px) {
   .footer {
     padding: 2px 16px;
   }
   
-  /* Переключаем сетку футера на одну колонку */
   .footer__content {
     grid-template-columns: 1fr;
     gap: 32px;
     text-align: center;
   }
   
-  /* Если не нужны логотип и контакты на мобильных, можно скрыть их */
   .footer__logo,
   .footer__contacts,
   .footer__social {
@@ -153,7 +148,6 @@
     margin-top: 16px;
   }
   
-  /* Меняем расположение элементов юридической информации на столбец */
   .footer__legal {
     display: flex;
     flex-direction: column;
@@ -166,7 +160,7 @@
     font-size: 14px;
   }
   
-  /* Адаптивное изображение */
+
   .footer__logo-image {
     max-width: 100%;
     width: 100%;
@@ -174,7 +168,7 @@
   }
 }
 
-/* Медиазапрос для планшетов (от 481px до 768px) */
+
 @media (max-width: 768px) and (min-width: 481px) {
   .footer__social {
     display: none;

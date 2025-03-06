@@ -1,12 +1,19 @@
 "use client"
-import type { FC } from "react";
-import "./Hero.css";
+import type { FC } from "react"
+import "./Hero.css"
 
 interface HeroProps {
-  id?: string;
+  id?: string
 }
 
 const Hero: FC<HeroProps> = ({ id }) => {
+  const handleEnrollClick = () => {
+    const dataFormSection = document.getElementById("data-form")
+    if (dataFormSection) {
+      dataFormSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
     <section className="hero" id={id}>
       <div className="hero__container">
@@ -28,11 +35,14 @@ const Hero: FC<HeroProps> = ({ id }) => {
             <br />и ценит индивидуальный подход в обучении
           </p>
 
-          <button className="hero__cta">ЗАПИСАТЬСЯ НА КУРС</button>
+          <button className="hero__cta" onClick={handleEnrollClick}>
+            ЗАПИСАТЬСЯ НА КУРС
+          </button>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
+
