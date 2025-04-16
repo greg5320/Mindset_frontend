@@ -13,7 +13,7 @@ interface FooterProps {
         <div className="footer__content">
           <div className="footer__logo">
             <img
-              src="https://s3-alpha-sig.figma.com/img/653d/4144/fe99844aeb4fa109ba5ef92dc959adae?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SOt5PxEHCx7iCXz2eWhVAXFyQyw9r4O-Ic2CrnuQLGYeq92uF0gfeLBjVg7b4KLMTXS1DwcJJJoPlCw164XNQzuCJVUECbtn-CKaNHC~04kXF04sXpWlks4jYH0PyU54g1hXLH4Wkkz~O6fjEio4SAd6x8ahMqwsMGS3QXn6cHpOOBT-4TmFSdDsf3E6XFow0-av5N6ZOq5ZIroyCoT8R-frgX~dwf~s-8ruR3k6Yv3Nw~0e-Rscm~KYbJPkHvAw9~jzqnW6j8cmc6b8id9AYZSuoqG~1nq-Lk4quY~g8WcIMUp6M78nIWi2NjmGFdqCGqV65Se5ikcBkHbpnYCHDA__"
+              src="http://localhost:9000/mindset/mindsetLogoBig.png"
               alt="Mindset Logo"
               className="footer__logo-image"
             />
